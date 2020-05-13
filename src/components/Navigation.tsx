@@ -1,6 +1,6 @@
 import {IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs} from "@ionic/react";
 import {Redirect, Route} from "react-router-dom";
-import {checkmarkCircleOutline, personCircle, trophy} from "ionicons/icons";
+import {checkmarkCircle, personCircle, trophy} from "ionicons/icons";
 import React from "react";
 
 import Pokes from "../pages/Pokes";
@@ -18,7 +18,7 @@ const Navigation: React.FC = () => (
     </IonRouterOutlet>
     <IonTabBar slot="bottom">
         <IonTabButton tab="pokes" href="/pokes">
-            <IonIcon icon={checkmarkCircleOutline} />
+            <IonIcon icon={checkmarkCircle} />
             <IonLabel>Pokes</IonLabel>
         </IonTabButton>
         <IonTabButton tab="rewards" href="/rewards">
