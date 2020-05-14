@@ -1,7 +1,7 @@
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonItem, IonThumbnail, IonLabel, IonBadge, IonButton, IonIcon } from '@ionic/react';
 import React from 'react';
-import ExploreContainer from '../components/ExploreContainer';
 import './User.css';
+import {logoFacebook, logoInstagram, logoTwitter, closeCircle} from "ionicons/icons";
 
 const User: React.FC = () => {
   return (
@@ -17,7 +17,18 @@ const User: React.FC = () => {
             <IonTitle size="large">User</IonTitle>
           </IonToolbar>
         </IonHeader>
-        <ExploreContainer />
+          <IonItem>
+              <IonThumbnail slot="start">
+                  <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==" />
+              </IonThumbnail>
+              <IonLabel>
+                  <h2>H3 Title Text</h2>
+                  <IonBadge color="medium">Member of Founders</IonBadge>
+              </IonLabel>
+          </IonItem>
+          <IonButton expand="block" ><IonIcon icon={logoTwitter} slot={"start"} /> Connect to Twitter</IonButton>
+          <IonButton expand="block" ><IonIcon icon={logoInstagram} slot={"start"} /> Connect to Instagram</IonButton>
+          <IonButton expand="block" ><IonIcon icon={logoFacebook} slot={"start"} /> Connect to Facebook</IonButton>
       </IonContent>
     </IonPage>
   );
