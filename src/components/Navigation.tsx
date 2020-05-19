@@ -6,6 +6,7 @@ import React from "react";
 import Pokes from "../pages/Pokes";
 import Rewards from "../pages/Rewards";
 import User from "../pages/User";
+import Onboarding from "../pages/Onboarding"
 
 const Navigation: React.FC = () => (
 
@@ -15,6 +16,7 @@ const Navigation: React.FC = () => (
         <Route path='/pokes' component={Pokes} exact />
         <Route path='/rewards' component={Rewards} exact />
         <Route path='/user' component={User} exact />
+        <Route path='/splash' component={Onboarding} exact />
     </IonRouterOutlet>
     <IonTabBar slot="bottom">
         <IonTabButton tab="pokes" href="/pokes">
@@ -28,6 +30,10 @@ const Navigation: React.FC = () => (
         <IonTabButton tab="user" href="/user">
             <IonIcon icon={personCircle} />
             <IonLabel>User</IonLabel>
+        </IonTabButton>
+        <IonTabButton tab="splash" href="/splash">
+            <IonIcon icon={personCircle} />
+            <IonLabel>splash</IonLabel>
         </IonTabButton>
     </IonTabBar>
 </IonTabs>

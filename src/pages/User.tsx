@@ -22,7 +22,7 @@ const User: React.FC = () => {
                   <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAAAAACH5BAAAAAAALAAAAAABAAEAAAICTAEAOw==" />
               </IonThumbnail>
               <IonLabel>
-                  <h2>H3 Title Text</h2>
+                  <h1>User Name</h1>
                   <IonBadge color="medium">Member of Founders</IonBadge>
               </IonLabel>
           </IonItem>
